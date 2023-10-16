@@ -1,28 +1,63 @@
-
-
 body {
     font-family: Arial, sans-serif;
     background: black;
     margin: 0;
     padding: 0;
-}
-h1 {
+
+}.container-fluid{
     color: #f2f2f2;
+    background: rgb(30, 29, 29);
+}
+.navbar-toggler
+{
+    
+    width: 53px;
+    color: yellow;
+    background-color: #f2f2f2;
+}
+.navbar-toggler-icon{
+    color: #f2f2f2;
+}
+
+h1 {
+    
     text-align: center;
     
 }
-
+.navbar-brand{
+    color: #f2f2f2;
+}
+.file::-webkit-file-upload-button
+{
+    background: white;
+    color: black;
+    font-weight: 400;
+}
+.file::-webkit-file-upload-button:hover
+{
+    background: green;
+    color: black;
+    font-weight: 600;
+}
 
 .container {
     background-color:transparent;
-    width: 300px;
+    width: 344px;
     margin: 100px auto;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px white;
     color: aliceblue;
 }
-
+.fixed-top
+{
+    position: relative;
+}
+li:hover{
+    background-color: rgb(133, 153, 50);
+    text-align: center;
+  
+}
 .form-group {
     margin: 10px 0;
 }

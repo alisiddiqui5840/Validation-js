@@ -5,10 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Login Form</title>
+    <link rel="icon" size="16x16" href="favIcon/android-chrome-192x192.png">
+ 
 </head>
 <body>
-    <header>
-        <h1>Construction Company</h1></header>
+    <nav>
+        <header>
+            <h1>Construction Company</h1></header>
+        <ul>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">↓ Menu ↓</a>
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="registration.html">Register</a>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+   
+        <h2>Welcome Note</h2>
+<div class="audio">
+        <audio controls  >
+            <source src="welcome.mp3" type="audio/mpeg">
+    
+        </audio>
+    </div>
+        <div class="flex">
+            <div class="box">
+        <h2> My Sample Work </h2>
+        <Video controls  width="450px" height="300px">
+<source  src="works.mp4" type="video/mp4">
+        </Video>
+    </div>
+    <div class="box">
+        <h2> My Work Portfolio</h2>
+        <iframe  width="450px" height="300px" src="https://www.youtube.com/embed/watch?v=98o2AgkoOGs&list=PLJQokg5d8E5w-AFFDERy334mdxJvo7rHK&index=4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+        <h2>My Embedded Map</h2>
+
+        <!-- Paste the generated iframe code here -->
+        <iframe class="youtube"
+        width="450px" height="300px"
+            frameborder="0"
+            style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.030451179091!2d-122.08374118496124!3d37.38605102985636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbf59eb61aaab%3A0x6a0e1c99fa376a06!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1613088065376!5m2!1sen!2sus"
+            allowfullscreen
+        ></iframe>
+    </div>
+    </div>
     <div class="container">
         
         <h2>Login</h2>
@@ -24,8 +71,13 @@
             <button type="submit">Login</button>
             <a href="registration.html">Register Now</a>
         </form>
+        
         <div id="error-message" class="error-message"></div>
+       
     </div>
+    <a class="Quotation" href="Quotation.pdf" download>Download Quotation</a>
+    <img src="a1.png" alt="" width="20px" height="20px">
+    
     <script src="login.js"></script>
 </body>
 </html>

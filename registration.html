@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/registration.css">
+   
+   
     <title>Registration Form</title>
 </head>
 <body>
-    <header>
-        <h1>Construction Company</h1></header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Construction Company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sidebar</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+              
+        
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
     <div class="container">
         <h2>Register</h2>
         <form id="register-form">
@@ -28,13 +57,31 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required placeholder="******">
             </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="******">
+            </div>
+               <!-- Other form fields -->
+
+    <!-- File input for DOC files (accept attribute) -->
+    <div class="form-group">
+        <label for="doc-file">Upload DOC File (max 15MB):</label>
+        <input class="file" type="file" id="doc-file" name="doc-file" accept=".doc" required>
+    </div>
+
+    
             
             <button type="submit">Register</button>
             <a href="index.html">Login Now
             </a>
         </form>
         <div id="error-message" class="error-message"></div>
+        <!-- Error message container (for displaying file-related errors) -->
+    <div id="file-error-message" class="error-message"></div>
     </div>
+    
     <script src="registration.js"></script>
+   
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
